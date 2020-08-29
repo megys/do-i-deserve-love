@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Love</title>
+
+  <link rel="icon" type="image/png" href="images/heart3.png">
+  <!-- For apple devices -->
+  <link rel="apple-touch-icon" type="image/png" href="images/heart3.png" />
+</head>
+
+<style>
+  /* text formatting */
+  * {
+    text-align: center;
+  }
+
+  body {
+    background-color: #ffb6b6;
+
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  h2 {
+    color: white;
+    font-family: verdana;
+    font-size: 400%;
+  }
+
+  /* features */
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  .pink {
+    background-color: #ffb6b6;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .pink:hover {
+    background-color: white;
+    color: #ffb6b6;
+  }
+
+  /* helper classes */
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+#panel {
+    display: none;
+  }
+
+</style>
+
+<body>
+
+  <div class="center" id="content">
+    <h1>Do I Deserve Love?</h1>
+    <button class="button pink" onclick="document.getElementById('content').style.display = 'none'; myFunction()";>
+      click here to find out</button>
+  </div>
+
+  <div class="center" id="panel">
+    <h2>Yes! Of course you do!</h2>
+    <h2> I love you<3</h2>
+    <h2>💗💗💗🥺🥺💗💗💗</h2>
+    <button class="button pink" onclick="window.location.reload();" style="font-size:12px">hold my love in your heart</button>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("panel").style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
